@@ -1,0 +1,154 @@
+body {
+ background-color: #FFFCF0;
+ margin-left: 10px;
+ margin-right: 20px;
+}
+
+* {
+ box-sizing: border-box;
+}
+
+.row {
+ display: -ms-flexbox; /* IE10 */
+ display: flex;
+ -ms-flex-wrap: wrap; /* IE10 */
+ flex-wrap: wrap;
+ margin: 0 -16px;
+ background-color: transparent;
+ margin-left: 20px;
+ margin-right: 20px;
+}
+
+.col-25 {
+ -ms-flex: 25%; /* IE10 */
+ flex: 25%;
+}
+
+.col-50 {
+ -ms-flex: 50%; /* IE10 */
+ flex: 50%;
+}
+
+.col-75 {
+ -ms-flex: 75%; /* IE10 */
+ flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+ padding: 0 16px;
+}
+.container {
+ background-color: transparent;
+ padding: 5px 20px 15px 20px;
+ border: 2px solid white;
+ border-radius: 3px;
+}
+
+input[type=text] {
+ width: 100%;
+ margin-bottom: 20px;
+ padding: 12px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+}
+
+label {
+ margin-bottom: 10px;
+ display: block;
+}
+
+.icon-container {
+ margin-bottom: 20px;
+ padding: 7px 0;
+ font-size: 24px;
+}
+
+.btn {
+ background-color: #F3C86C;
+ color: white;
+ padding: 12px;
+ margin: 10px 0;
+ border: none;
+ width: 100%;
+ border-radius: 3px;
+ cursor: pointer;
+ font-size: 17px;
+}
+
+.btn:hover {
+ background-color:#F3C86C;
+}
+
+a {
+ color: #F3C86C;
+}
+
+hr {
+ border: 1px solid #F3C86C;
+}
+
+span.price {
+ float: right;
+ color: grey;
+}
+
+.brand-name{
+  margin-left:40%;
+  font-size: 4rem;
+  font-weight: 10;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Ephesis', cursive;
+
+}
+
+.user{
+  margin-left: 46%;
+  font-size: 1rem;
+  font-weight: 10;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  font-family: 'Vollkorn', serif;
+
+}
+
+.underline{
+  content: "";
+  max-width: 70%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 4px solid black;
+  margin-bottom: 30px;
+}
+
+.shape{
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+}
+.details{
+  max-width: 75%;
+  height: 70%;
+  margin-top: 10px;
+  padding: 30px;
+  z-index: -10;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: black;
+  font-family: 'Vollkorn', serif;
+
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+ .row {
+ flex-direction: column-reverse;
+ }
+ .col-25 {
+ margin-bottom: 20px;
+ }
+}

@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: #white;
+  font-family: 'Vollkorn', serif;
+}
+
+#navbar{
+  display: flex;
+  align-items: center;
+  position: sticky;
+}
+
+#navbar::before{
+  content :"";
+  background-color: #FFF2C0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.3;
+
+}
+
+/*Navigation Bar: Logo and Image*/
+.logo1{
+  margin: 0;  }
+
+.logo1 img{
+  height:0;
+  margin:0;
+}
+
+/*Navigation Bar: List Styling*/
+#navbar{
+  position: relative;
+  display: flex;
+  width: 100%;
+
+}
+
+
+ #navbar ul{
+     display: flex;
+      width:95%;
+ }
+
+ #navbar ul li {
+
+   list-style: none;
+   font-size: 1.1rem;
+ }
+
+  #navbar ul li a{
+    color: black;
+    display: block;
+    padding: 3px 25px;
+    border-radius: 8px;
+    text-decoration: none;     /*underline*/
+  }
+
+
+  #navbar ul li a:hover{
+    color: black;
+    background-color: #F3C86C;
+    transition: 0.8s ease-in-out;
+
+  }
+  /*SearchBar*/
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+   .searchBox {
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: 70px;
+     padding: 10px;
+   }
+   .searchText {
+     width: 0rem;
+     padding: 0rem;
+     border-radius: 4rem;
+     border: none;
+     outline: none;
+     transition: all 0.2s linear;
+
+   }
+   .searchText:focus{
+     outline: none;
+   }
+   .searchBtn{
+     width: 2rem;
+     height: 2rem;
+     position: absolute;
+     right: 1rem;
+     display: grid;
+     place-items: center;
+     border-radius: 50%;
+   }
+   .fa-search {
+    color: brown;
+    padding: 5px;
+   }
+   .searchBox:hover >  .searchText{
+
+       width: 15rem;
+       padding: 1rem;
+       box-shadow: 0 1rem 1rem -1.5rem rgba(0, 0, 0, 0.5);
+     }
+     .searchBox:hover >.searchBtn{
+       background: #fff;
+       color: black;
+     }
+
+
+
+     .cart{
+       position: absolute;
+       margin-left: 90%;
+       margin-top: 7px;
+       border: 4px, soild  #F3C86C;
+       border-radius: 4px;
+     }
+     .cart ion-icon{
+       float: right;
+       vertical-align: bottom;
+       font-size: 20px;
+       margin-right: 10px;
+
+
+     }
+     .cart a{
+       background-color: #F3C86C;
+       font-family: 'Vollkorn', serif;
+       color: white;
+       padding: 8px;
+       cursor: pointer;
+       text-decoration: none;
+       float: right;
+
+     }
+     .headpic{
+       position: absolute;
+       width: 10%;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       margin-left: 44%;
+       margin-bottom: 0px;
+       padding: 0;
+     }
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.categories{
+    margin: 70px 0;
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4{
+    flex-basis: 25%;
+    min-width: 200px;
+    margin-bottom: 50px;
+    padding:10px;
+    transition: transform 0.5;
+}
+.col-4 img{
+    width: 50%;
+}
+.col-4:hover{
+    transform: translate(-5px);
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row2{
+    justify-content: space-between;
+    margin:100px auto 50px;
+}
+select{
+    border:1px solid #F3C86C;
+    padding: 5px;
+    margin: 200px auto 80px;
+}
+select:focus{
+    outline: none;
+}
+.title{
+    text-align: center;
+    margin: 200px auto 80px;
+    position:relative;
+    line-height: 60px;
+    color:#555;
+}
+.title::after{
+    content: '';
+    background: #F3C86C;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.page-btn{
+    margin: 0 auto 80px;
+}
+.page-btn span{
+    display: inline-block;
+    border:1px solid #F3C86C;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+
+}
+.page-btn span:hover{
+    background: #F3C86C;
+    color: #fff;
+}
+
+/*footer*/
+
+footer{
+    background: transparent;
+    color: white;
+    padding: 20px 11px;
+   bottom: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .container{
+    max-width: 1170px;
+    margin: auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+    ul{
+      list-style: none;
+    }
+
+  .text-footer{
+    text-align: center;
+    font-size: 18px;
+    background:#FFFCF0; ;
+    color: black;
+    padding: 30px 11px;
+
+  }
+  .footer-col{
+    width: 20%;
+    padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content:'';
+    position: absolute;
+    left: 3;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 8px;
+
+   }
+   .footer-col ul li a{
+     font-size: 16px;
+     text-transform: capitalize;
+     text-decoration: none;
+     font-weight: 300;
+     display: block;
+     transition: all 0.3s ease;
+   }
+   .footer-col ul li a:hover{
+     color: black;
+     padding-left: 8px;
+   }
+   .footer-col .social-links a{
+     display: inline-block;
+     height: 40px;
+     width: 40px;
+     background-color: rgba(26, 11, 11, 0.2);
+     margin: 0 10px 10px 0;
+     text-align: center;
+     line-height: 40px;
+     border-radius: 50%;
+     transition: all 0.5s ease;
+   }
+   .footer-col .social-links a:hover{
+     color: #24262b;
+     background-color:rgb(194, 150, 150);
+
+   }
+
+
+/*.cart-page{
+    margin: 80px auto;
+}
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;
+}
+td input{
+    width:40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}*/

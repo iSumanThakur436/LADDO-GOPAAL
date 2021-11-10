@@ -1,0 +1,72 @@
+/*Navigation*/
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0 7px;
+    padding-bottom: 8px;
+
+}
+
+/*Home section*/
+#home{
+height: 430px;
+padding: 12px 68px;
+}
+
+#home::before{
+    height: 290px;
+    width: 400px
+}
+#home p{
+    font-size: 11px;
+    flex-direction: column;
+}
+
+/*About us*/
+
+
+/*Contact us section*/
+#contact-box form{
+width: 70%;
+}
+
+/*Footer*/
+
+
+/* Utility classes */
+.h-primaary{
+    font-size: 99px;
+}
+
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
+
+.cart{
+  position: absolute;
+  margin-right: 20px;
+  border: 4px, soild  #F3C86C;
+  border-radius: 4px;
+}
+.cart ion-icon{
+  float: right;
+  vertical-align: bottom;
+  font-size: 20px;
+  margin-right: 10px;
+
+
+}
+.cart a{
+  background-color: #F3C86C;
+  font-family: 'Vollkorn', serif;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  float: right;
+
+}
